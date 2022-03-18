@@ -7,11 +7,11 @@ metadata:
     tier: front
   name: vote
 spec:
-  replicas: 3
+  replicas: 5
   template:
     spec:
       containers:
-      - image: schoolofdevops/vote:v3
+      - image: schoolofdevops/vote:v2
         name: vote
         envFrom: 
           - configMapRef: 
